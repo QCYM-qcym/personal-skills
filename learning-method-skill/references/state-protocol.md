@@ -14,6 +14,8 @@
 
 将 [状态模板](../templates/learning-state.md) 中各段按需创建为独立文件；已有文件沿用，补缺字段即可，不批量覆盖。
 
+若课程有根目录 mission.md 或 resources/index.md，状态目录的 MISSION.md/RESOURCES.md 可只写 project_id 与到正文的相对路径；读取时跟随明确指针，只维护一份正文。不得只读指针就宣称已读取目标/材料。CURRENT 中可增加 lesson_id、lesson_path、diagnosis_ref 和 scaffold_plan 以接续定做课程；这些是可选字段，旧状态无须重置或升级 schema。notes.md 若是展示摘要，须链接 CURRENT 并标 revision，不作为第二份状态权威。
+
 | 文件 | 唯一负责的内容 | 初始值 |
 | --- | --- | --- |
 | MISSION.md | project_id、课程、范围、目标与验收 | 根据用户输入；未知明确写待确认 |

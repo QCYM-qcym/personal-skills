@@ -34,6 +34,8 @@ next_action: "选择一个可检验学习节点"
 
 pending_task 有任务时写完整题目或可访问文件及精确位置、要求用户做什么；next_action 始终只选一个立即动作。NODES 与 REVIEWS 的详细结果不要重复拷贝进 CURRENT。
 
+有 HTML 课程时可加 lesson_id、lesson_path、diagnosis_ref、scaffold_plan，分别记录当前课、实际课件路径、诊断依据和支架策略。MISSION/RESOURCES 如指向课程根目录正文，在对应文件写明 project_id 和相对路径，按协议跟随读取，勿复制整份正文。
+
 ## NODES.md
 
 | 节点 ID | 名称 | 必要前置 | 能力状态 | 最近证据/事件 | 是否待巩固及原因 |

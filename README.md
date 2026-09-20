@@ -6,8 +6,8 @@
 
 | Skill | 适用场景 | 版本 |
 | --- | --- | --- |
-| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、四图建模、网状学习、跨学科适配、Obsidian 与华为笔记衔接 | 1.3.0 |
-| [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.2.0 |
+| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.4.0 |
+| [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.2.1 |
 
 两个技能是可选方案，一次学习通常选一个。完整版是当前主要维护方向；轻量版保留独立用途，不自动把不同版本的规则混在一起。
 
@@ -73,6 +73,14 @@ Obsidian 笔记库位置：【实际路径，或暂不使用】
 完整可调整版本见 [新项目启动模板](personal-learning-skill/templates/project-start.md)；时间、复习间隔等参数见 [个人设置模板](personal-learning-skill/templates/learner-profile.md)。复制设置到学习项目后修改，单门课的偏好不直接改公共模板。
 
 ## 每次学习怎样继续
+
+完整版的新课程工作区为：`mission.md`（目标）、`resources/`（资料）、`lessons/`（HTML 课件）、`glossary/`（术语与概念）、`solve-cards/`（解决问题卡）、`notes.md`（理解变化与索引），另有 `.learning/` 保存进度。已有目录不强制迁移。
+
+正式课程用 HTML 承载交互、分步图解、测验与按需提示；Markdown 保留可检索的术语、链接和记录。HTML 页面不会默认自动更新课程状态，需把作答结果交回助手。导出到华为笔记的 PDF 是静态练习页。
+
+你可以说：“我已经学到【内容】，能独立做【任务】，卡在【问题】，今天有【时间】；请先结合进度诊断，再为我定做下一节 HTML 课。”助手会按真实表现选择有限帮助后可推进的挑战，过易增加一个变化维度，过难补前置与支架，不用固定正确率判断能力。
+
+熟悉代码库时可说：“用这个 Skill 带我 onboard 到【仓库路径】，目标是【独立追踪/解释的行为】；先只读，沿真实入口、领域术语和一条数据路径诊断并设计入门课。”详见 [课程设计与工程分支](personal-learning-skill/references/course-design.md)。
 
 已有课程不要每次从零建图。可直接发送：
 

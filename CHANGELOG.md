@@ -2,6 +2,13 @@
 
 技能各自维护版本，仓库不强制所有技能同时升级。
 
+## 2026-09-20 — 自适应 HTML 课程与代码库入门
+
+- personal-learning-skill 升至 1.4.0：新增课程设计规范、solve card 与单课设计模板。
+- 新工作区采用 mission.md、resources/、lessons/HTML、glossary/、solve-cards/、notes.md；兼容现有状态和旧目录。
+- 加入最近发展区的证据校准、进度诊断后定做下一课，以及真实代码路径驱动的 onboarding。
+- 两种 Skill 的兼容状态协议同步可选课次字段与单一来源指针；轻量版为此升至 0.2.1，教学流程不变。
+
 ## 2026-09-20 — 有状态学习
 
 - personal-learning-skill 升至 1.3.0，learning-method-skill 升至 0.2.0。

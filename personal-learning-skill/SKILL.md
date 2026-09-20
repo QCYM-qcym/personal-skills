@@ -1,8 +1,8 @@
 ---
 name: personal-learning-skill
-description: Use when a learner starts or resumes a learning project in mathematics, English, Japanese, programming, or another subject; requests guided practice, knowledge maps, exam preparation, or migration of a learning workflow across projects. 单纯翻译、代写、文件转换或事实查询不触发。
+description: Use when a learner starts or resumes a course, requests adaptive HTML lessons, guided practice, knowledge maps, exam preparation, or onboarding to a codebase. 适用于有状态课程学习、进度诊断与定做下一课；单纯翻译、代写、文件转换或事实查询不触发。
 metadata:
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # 通用学习教练
@@ -12,6 +12,8 @@ metadata:
 默认先在一个模块内建立概念与原理，再集中归纳题型元模型、解题方法、二级结论及应试技巧。自顶向下定位问题，自底向上补必要基础，再回到网络检验联系；不要求学完整门课才开始应用。
 
 ## 入口与个人设置
+
+- 初始化课程、生成 HTML 课件、按进度定做下一课或代码库 onboarding 时读取 [课程设计](references/course-design.md)。新工作区采用 mission.md、resources/、lessons/、glossary/、solve-cards/、notes.md，沿用 `.learning/` 状态；旧项目按职责映射，不强制重建。
 
 - 每次开始或续学先读取 [有状态学习协议](references/state-protocol.md)，定位本课程状态，恢复唯一待答任务；每次有意义反馈及结束按协议保存并读回。能力状态、复查和下一步不只留在聊天里；写入失败明确说明。不同课程独立，更新技能不重置进度。
 
@@ -36,11 +38,15 @@ metadata:
 
 一个节点对应一个可独立检验的动作，例如“区分互斥与独立”，而不是“掌握所有概率公式”。
 
+按最近发展区校准：把实际独立能力与需要有限提示的能力分开，通过短诊断和用户反馈选择有挑战但可推进的任务。已有充分证据就不重复诊断；太轻松时增加一个变化维度，持续受挫时缩小任务并补支架，不声称一次测验能精确测量能力边界。
+
 先用一道短诊断检查必要前置；缺口影响当前学习才补。把本节点的目标、教材定位、适用条件、关联节点和验收问题写入 [学习记录模板](templates/study-record.md)。完成条件是能用一句话说明“这轮要会做什么”。
 
 概念理解围绕：为什么需要、准确含义与条件、例子和反例、前置与相邻概念、能解释或推出什么。纵向串联依据与推导，横向并联共同结构及差异，每条联系都能说明理由。基础阶段用辨析、反例、简单推导和应用检验理解，暂不成批灌输套路。
 
 ## 阶段 2：短输入与主动尝试
+
+正式课默认产出 lessons/ 下的 HTML，承载必要图解、交互和测验；概念索引与记录用 Markdown。用户报告进度后先与既有证据对齐，简短诊断再定做一课。工具受限时明确降级，对话中的即时帮助不必等课件完成。
 
 每次只推进一个小循环：
 
