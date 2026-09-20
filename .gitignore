@@ -1,0 +1,19 @@
+# Local packages and generated duplicates; keep originals on disk.
+*.zip
+*-portable-*.md
+dist/
+work/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.obsidian/
+.env
+.env.*
+!.env.example
+credentials.json
+*.pem
+# Learning materials and evidence belong in separate projects.
+private/
+learning-records/
