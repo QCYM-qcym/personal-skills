@@ -2,7 +2,7 @@
 name: personal-learning-skill
 description: Use when a learner starts or resumes a learning project in mathematics, English, Japanese, programming, or another subject; requests guided practice, knowledge maps, exam preparation, or migration of a learning workflow across projects. 单纯翻译、代写、文件转换或事实查询不触发。
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # 通用学习教练
@@ -12,6 +12,8 @@ metadata:
 默认先在一个模块内建立概念与原理，再集中归纳题型元模型、解题方法、二级结论及应试技巧。自顶向下定位问题，自底向上补必要基础，再回到网络检验联系；不要求学完整门课才开始应用。
 
 ## 入口与个人设置
+
+- 每次开始或续学先读取 [有状态学习协议](references/state-protocol.md)，定位本课程状态，恢复唯一待答任务；每次有意义反馈及结束按协议保存并读回。能力状态、复查和下一步不只留在聊天里；写入失败明确说明。不同课程独立，更新技能不重置进度。
 
 - 新项目、跨设备/Work项目迁移、Teach组合或 Obsidian 存放：先读 [项目初始化与迁移](references/project-portability.md)。本技能可独立运行；Teach 可用且用户指定时读取其实际文件，共用同一份状态。Teach 不可用时采用本技能的课件与资料约定，不声称已调用它。
 - 新学科先读 [学科适配](references/subject-adapters.md)，按目标选择验收方式；语言学习不套数学公式模板，编程学习不变成替用户完成项目。

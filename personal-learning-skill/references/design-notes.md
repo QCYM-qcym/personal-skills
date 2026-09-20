@@ -38,6 +38,8 @@
 
 ## 使用与可移植性
 
+1.3.0 的有状态设计进一步参考固定快照中的 [wayfinder](https://github.com/mattpocock/skills/blob/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/wayfinder/SKILL.md) 和 [triage](https://github.com/mattpocock/skills/blob/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/triage/SKILL.md)：前者把持久索引与详细记录分开并按需恢复，后者把工作进展写成明确状态转换。本项目将其转化为私有课程目录中的状态账本，没有把个人学习记录放上 GitHub Issue，也没有声称上游所有 Skill 自带永久记忆。
+
 1.2.0 更新时再次打开上游仓库并核对远程 main，仍为上面固定快照。继续借鉴 writing-for-agents 的按需引用与单一信息来源，以及 diagnosing-bugs 的可观察完成条件；没有复制其工程审批或测试流程。具体对应：主入口保存概念优先的学习顺序，Obsidian/平板细节按条件加载，参考卡与个人学习记录分工，学习效果由独立与延迟表现验证。设备联动方案属于针对用户需求的原创适配，不是上游现成教学功能。
 
 这是包含 YAML 元信息的 Markdown Skill 目录，可交给支持此类目录的助手读取；不同宿主的自动发现和安装方式各异。无需先安装任何特定插件，也没有自动提醒或自动记忆功能。

@@ -17,3 +17,4 @@ credentials.json
 # Learning materials and evidence belong in separate projects.
 private/
 learning-records/
+.learning/
