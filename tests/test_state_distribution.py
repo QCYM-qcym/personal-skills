@@ -1,4 +1,4 @@
-"""Both independently distributed skills must use the same state contract."""
+"""All independently distributed skills must use the same state contract."""
 from pathlib import Path
 import unittest
 
@@ -9,8 +9,10 @@ class StateDistributionTests(unittest.TestCase):
         for relative in ('references/state-protocol.md', 'templates/learning-state.md'):
             with self.subTest(file=relative):
                 canonical = root / 'personal-learning-skill' / relative
-                lightweight = root / 'learning-method-skill' / relative
-                self.assertEqual(canonical.read_bytes(), lightweight.read_bytes())
+                for name in ('learning-method-skill', 'scientific-thinking-skill'):
+                    with self.subTest(skill=name):
+                        distributed = root / name / relative
+                        self.assertEqual(canonical.read_bytes(), distributed.read_bytes())
 
 
 if __name__ == '__main__':
