@@ -6,11 +6,17 @@
 
 | Skill | 适用场景 | 版本 |
 | --- | --- | --- |
-| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.6.0 |
+| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.7.0 |
 | [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.3.0 |
 | [scientific-thinking-skill](scientific-thinking-skill/SKILL.md) | 科学思维训练：建模、选法、证据与迁移；可嵌入课程 | 0.1.0 |
 
 两种课程技能是可选方案，一次学习通常选一个。完整版是当前主要维护方向；轻量版保留独立用途，不自动把不同版本的规则混在一起。
+
+## 教学节奏、风格与纠错
+
+1.7.0 融合 teacher-skill 中适合本项目的教学策略：按当前任务选择示范、支架或独立探索，默认完整讲解后集中检查。可直接说“切换快速模式”“这部分深挖”“恢复标准节奏”；这些偏好记录在本课程，能力仍按真实证据评估。
+
+提供教师讲义/字幕时，可借鉴其内容组织与解释风格；没有素材就不声称分析过。指出教师讲错后，助手核实原说法，修复受影响的卡片/课件和证据，而非仅道歉。原四图、记忆和数学层继续复用。详见 [教学适配](personal-learning-skill/references/teaching-adaptation.md) 与 [来源取舍](personal-learning-skill/references/design-notes.md)。
 
 ## 数学知识建模与学习层
 

@@ -45,3 +45,20 @@
 这是包含 YAML 元信息的 Markdown Skill 目录，可交给支持此类目录的助手读取；不同宿主的自动发现和安装方式各异。无需先安装任何特定插件，也没有自动提醒或自动记忆功能。
 
 将整个目录交给助手，说明“读取 SKILL.md 并按其中流程带我学习”。保存自己的个人设置、地图与学习记录，下次带上这些记录继续。仅上传 SKILL.md 会失去附属示例和模板，应同时保留目录结构。
+
+## teacher-skill 融合评估（2026-09-23）
+
+固定参考提交 [86056ac80f9e5f80c1e965a0de7e358ca54f4bdc](https://github.com/chentao326/teacher-skill/tree/86056ac80f9e5f80c1e965a0de7e358ca54f4bdc)，SKILL标识2.7.0，MIT许可。读取主文件、教学策略、教学技巧、教学SOP相关段、风格模板/纠正处理、出题模板相关段及答案评估脚本，检索提取框架/状态脚本/配置；未对上游全部代码运行测试，也未安装或执行其脚本。
+
+| 上游设计与实际文件 | 本项目已有内容 | 取舍 |
+| --- | --- | --- |
+| ref/teaching-strategies.md 按基础改变讲练方式 | 最近发展区与局部诊断 | 吸收讲授/支架/探索选择，改为局部任务证据，省略固定比例、强中弱标签及不能跳过规则 |
+| ref/teaching-techniques.md 类比与解释 | 概念优先与四图 | 补对应关系/失效边界；类比按需，无需新增大型类比库 |
+| prompts/style-profile-template.md 教学风格 | 个人设置 | 只按用户请求提取可观察特征，来源有限就说明；不复制六维大表及教师档案系统 |
+| ref/teaching-sop.md 教师纠错；prompts/correction_handler.md 风格纠正 | 学生首错诊断、事件协议 | 新增教师自身纠错，纠正事实须核验，修复产物和受影响证据；不采用“用户说错就是错”或每次保存确认 |
+| ref/extraction-framework.md 素材转课程 | 材料主线、节点与数学层 | 按主张/步骤/边界/案例映射现有节点；不照搬固定来源排序或出现两次即过关 |
+| scripts/evaluate_answer.py 等 | 当前证据、复查、提示状态 | 评估脚本返回反馈模板，语义判断仍由AI完成，不宣传为自动判卷；不引入第二套状态或评分 |
+
+以上借鉴机制并按用户需求重新撰写，没有复制上游代码、模板或大段原文。不继承其效果倍数宣传、固定遗忘间隔或自动升档阈值；这些并不能证明本用户学习改善。维持原数学能力维度与跨学科隔离。
+
+来源：[教学策略](https://github.com/chentao326/teacher-skill/blob/86056ac80f9e5f80c1e965a0de7e358ca54f4bdc/ref/teaching-strategies.md)、[教学流程](https://github.com/chentao326/teacher-skill/blob/86056ac80f9e5f80c1e965a0de7e358ca54f4bdc/ref/teaching-sop.md)、[风格模板](https://github.com/chentao326/teacher-skill/blob/86056ac80f9e5f80c1e965a0de7e358ca54f4bdc/prompts/style-profile-template.md)、[答案评估实现](https://github.com/chentao326/teacher-skill/blob/86056ac80f9e5f80c1e965a0de7e358ca54f4bdc/scripts/evaluate_answer.py)。
