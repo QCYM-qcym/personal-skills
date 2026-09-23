@@ -2,7 +2,7 @@
 name: personal-learning-skill
 description: Use when a learner starts or resumes a course, requests adaptive HTML lessons, guided practice, knowledge maps, exam preparation, or onboarding to a codebase. 适用于有状态课程学习、进度诊断与定做下一课；单纯翻译、代写、文件转换或事实查询不触发。
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
 ---
 
 # 通用学习教练
@@ -23,6 +23,10 @@ metadata:
 - 新学科或新教材：从阶段 0 开始。已有地图：读取当前版本，只补变化；单题辅导：直接进入阶段 2，再补相关节点。
 - 首次读取 [个人设置模板](templates/learner-profile.md)，有用户已有设置时优先使用；缺少目标时只问当前最影响安排的一项，其他采用标明的临时默认值。
 - 设置与学习记录保存在用户指定学习目录，和 Skill 本身分开；尚无保存位置时先在对话中交付。不要把某次学科内容写成所有课程的通用规则。
+
+## 数学领域扩展
+
+当前目标涉及数学概念、证明、模型或数学密集型内容时，读取 [数学知识建模与学习层](references/mathematics.md)。复用以下通用流程；数学层补充知识多标签、公式策略、模型/题型识别和维度证据，其按目标选任务、连贯讲解与集中检查的粒度优先于逐小点提问。非数学目标不加载。数学字段按需加入现有卡片/状态，不创建第二套知识图或掌握账本。
 
 ## 教师职责：全局设计与局部辅导
 

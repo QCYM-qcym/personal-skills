@@ -6,11 +6,24 @@
 
 | Skill | 适用场景 | 版本 |
 | --- | --- | --- |
-| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.5.0 |
+| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.6.0 |
 | [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.3.0 |
 | [scientific-thinking-skill](scientific-thinking-skill/SKILL.md) | 科学思维训练：建模、选法、证据与迁移；可嵌入课程 | 0.1.0 |
 
 两种课程技能是可选方案，一次学习通常选一个。完整版是当前主要维护方向；轻量版保留独立用途，不自动把不同版本的规则混在一起。
+
+## 数学知识建模与学习层
+
+personal-learning-skill 在数学及数学密集型目标下按需启用 [数学层](personal-learning-skill/references/mathematics.md)，支持“知识网络 × 七类知识”、公式条件/学习策略、模型识别、逐步去章节提示、首错反向补救与十维度证据。旧状态继续沿用，维度未知不会自动算掌握。
+
+```text
+读取 E:/agent/skill/personal-learning-skill/SKILL.md，启用数学学习层。
+按我当前目标选择讲解、公式、识别训练或错题诊断；先读已有进度。
+用完整概念组连贯讲解，集中检查，不机械输出全部字段。
+题型和公式绑定条件；无章节标签的选法能力与已提示后的计算分别记录。
+```
+
+无需单独安装数学插件；普通语言、编程课程仍走原分支。教材先处理目标范围，四图增量扩展。说明与例子见 [节点契约](personal-learning-skill/references/math-node-format.md)、[三个数学领域示例](personal-learning-skill/references/math-examples.md)。此次架构审查及实施方案见 [设计记录](docs/math-layer-plan.md)。
 
 ## 科学思维训练
 
