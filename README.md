@@ -9,8 +9,28 @@
 | [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.7.0 |
 | [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.3.0 |
 | [scientific-thinking-skill](scientific-thinking-skill/SKILL.md) | 科学思维训练：建模、选法、证据与迁移；可嵌入课程 | 0.1.0 |
+| [language-learning-skill](language-learning-skill/SKILL.md) | 日语零基础、英语CET-4与有记忆的语言训练 | 0.1.0 |
 
 两种课程技能是可选方案，一次学习通常选一个。完整版是当前主要维护方向；轻量版保留独立用途，不自动把不同版本的规则混在一起。
+
+## 语言学习：日语入门与英语四级
+
+[language-learning-skill](language-learning-skill/SKILL.md) **0.1.0** 可独立运行：日语按情境让假名、声音与交流并行；英语先诊断再补基础和训练CET-4四个分项。分开记识读、听辨、表达，延续已有记忆与集中教学节奏。
+
+```text
+读取 E:/agent/skill/language-learning-skill/SKILL.md 及所需引用。
+我想从零学日语，每次可学【时间】，有【音频/仅文字】条件。
+先给完整第一单元和一次集中练习，记录在【课程目录】。
+```
+
+```text
+读取 E:/agent/skill/language-learning-skill/SKILL.md。
+我想把英语提升到大学英语四级水平，目前基础【自述/成绩/未知】。
+先做简短诊断，再给路径；我每次可学【时间】，考试计划【日期/暂无】。
+沿用【英语课程目录】的已有状态，不虚报听力水平或预测正式分数。
+```
+
+课程目录未定时可先在对话学习。日语与英语用不同课程身份；无音频时继续文字训练，听说留待验证。这里只提供教学方法，不代表已替你建立课程或完成水平诊断。
 
 ## 教学节奏、风格与纠错
 
@@ -230,7 +250,7 @@ git clone https://github.com/QCYM-qcym/personal-skills.git
 
 日常由本地编辑、Git 提交保存历史、GitHub 同步备份；其他电脑更新前先提交自己的改动，再执行 `git pull --ff-only`。出现冲突时按双方意图合并，不直接覆盖。
 
-三种技能独立分发，因此各自包含状态协议与模板。维护时以完整版的这两个文件为源，同步到轻量版与科学思维版；自动检查会验证分发副本一致，避免同一课程在切换技能后出现两套状态规则。
+四种技能独立分发，因此各自包含状态协议与模板。维护时以完整版的这两个文件为源，同步到轻量版、科学思维版与语言版；自动检查会验证分发副本一致，避免同一课程在切换技能后出现两套状态规则。
 
 ## 内容与分发
 
