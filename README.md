@@ -6,7 +6,7 @@
 
 | Skill | 适用场景 | 版本 |
 | --- | --- | --- |
-| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.9.0 |
+| [personal-learning-skill](personal-learning-skill/SKILL.md) | 默认推荐：概念优先、知识网络、自适应 HTML 课程、代码库入门与华为笔记衔接 | 1.10.0 |
 | [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.3.0 |
 | [scientific-thinking-skill](scientific-thinking-skill/SKILL.md) | 科学思维训练：建模、选法、证据与迁移；可嵌入课程 | 0.1.0 |
 | [language-learning-skill](language-learning-skill/SKILL.md) | 日语零基础、英语CET-4与有记忆的语言训练 | 0.1.0 |
@@ -32,11 +32,25 @@
 
 课程目录未定时可先在对话学习。日语与英语用不同课程身份；无音频时继续文字训练，听说留待验证。这里只提供教学方法，不代表已替你建立课程或完成水平诊断。
 
+## 1.10.0：先建立全景，再检验自己的模型
+
+新整课默认：材料核验 → 快速全课总览 → 轻量地图检查 → 关键节点深入。局部难点先判断是否阻塞主线；不阻塞的进入深挖队列，避免第一章停留过久。
+
+深入时：预测/尝试 → 首错与根因诊断 → 最小修复 → 新题复测 → 迁移/实践 → 模型变化复盘 → 延迟提取。一次一个有价值的问题，明确要题型总结或完整答案仍直接提供。已有课程从原进度续学。
+
+知识图、误解图、题型图共享已有节点与卡片；看过、回忆、识别、抗干扰、迁移、教回按证据区分。旧四状态和 schema 1 保留，新增阶段不是掌握等级。其他三个Skill本次不改行为。
+
+[架构审查与方案](docs/learning-lifecycle-upgrade.md) · [升级交付报告](docs/learning-lifecycle-report.md) · [场景验证](personal-learning-skill/references/lifecycle-validation.md)
+
+调用：“读取 personal-learning-skill，先快速建立这门课的全景，非阻塞难点留待深挖；深入时帮我发现并修复错误模型。”
+
+下载本版：[personal-learning-skill-v1.10.0 ZIP](https://github.com/QCYM-qcym/personal-skills/archive/refs/tags/personal-learning-skill-v1.10.0.zip)。ZIP是该Tag的整个仓库快照，使用其中的personal-learning-skill目录。
+
 ## 教学节奏、风格与纠错
 
 1.9.0 增加所有学科通用的八视角知识连接层：是什么、为什么需要、来源、成立机制、适用条件、知识联系、条件变化和迁移。重点解释连接、反例和共同结构，合并进基础与例题，避免八段固定问答。
 
-教材教学继续默认采用“必要基础 → 教材题型表 → 代表例题完整解法”，基础讲完即可归纳题型，练习、四图和 HTML 按需展开。记忆保留，未测不记为掌握。
+明确要求题型总结或沿用教材简洁偏好时采用“必要基础 → 教材题型表 → 代表例题完整解法”，基础讲完即可归纳题型，练习、四图和 HTML 按需展开。记忆保留，未测不记为掌握。
 
 此前 1.7.0 融合 teacher-skill 中适合本项目的教学策略：按当前任务选择示范、支架或独立探索，可选择完整讲解后集中检查。可直接说“切换快速模式”“这部分深挖”“恢复标准节奏”；这些偏好记录在本课程，能力仍按真实证据评估。
 
@@ -232,7 +246,7 @@ git clone https://github.com/QCYM-qcym/personal-skills.git
 ```text
 请修改 E:/agent/skill 中的【Skill 名称】：【观察到的问题与期望变化】。
 先读取现有文件，保留其他修改；更新对应版本和更新记录，完成检查，
-然后提交并推送到 QCYM-qcym/personal-skills。
+然后提交并推送到 QCYM-qcym/personal-skills，为更新版本创建并推送对应Tag，提供ZIP下载链接。
 只提交本次相关文件，不上传教材、学习记录或凭据。
 ```
 
@@ -250,7 +264,7 @@ git clone https://github.com/QCYM-qcym/personal-skills.git
    ```
 
 5. 对影响教学行为的修改，再实际跑相关场景。静态检查通过不代表教学效果已验证。
-6. 检查差异后提交和推送。重要版本创建单独的技能标签，例如 `personal-learning-skill-v1.2.0`。后续标签不复用、不覆盖。
+6. 检查差异后提交和推送。每次技能版本更新都创建并推送带注释的技能标签，例如 `personal-learning-skill-v1.10.0`，核验远端目标提交并给出ZIP下载链接。后续标签不复用、不覆盖。
 
 日常由本地编辑、Git 提交保存历史、GitHub 同步备份；其他电脑更新前先提交自己的改动，再执行 `git pull --ff-only`。出现冲突时按双方意图合并，不直接覆盖。
 

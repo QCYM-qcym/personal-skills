@@ -15,3 +15,5 @@
 - 提交前运行 scripts/validate_skills.py 与 tests/ 的检查；修改教学行为时另做相关场景验证，报告未实测范围。
 - 发布前检查 Git 文件清单；不纳入个人教材、凭据和学习记录。
 - 默认维护 personal-learning-skill；learning-method-skill 是独立轻量版，不强制同步成同一流程。
+
+- 每次技能版本更新提交并发布时，为对应提交创建并推送带注释的 `<skill-name>-v<version>` Tag，提供 GitHub ZIP 下载链接并核验远端标签。已有同名Tag不得移动或覆盖；未改变的技能不虚增版本。提交与Tag应指向同一已验证版本。
