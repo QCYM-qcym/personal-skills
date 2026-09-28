@@ -10,6 +10,7 @@
 | [learning-method-skill](learning-method-skill/SKILL.md) | 轻量学习循环：目标、尝试、反馈、变式和复习 | 0.3.0 |
 | [scientific-thinking-skill](scientific-thinking-skill/SKILL.md) | 科学思维训练：建模、选法、证据与迁移；可嵌入课程 | 0.1.0 |
 | [language-learning-skill](language-learning-skill/SKILL.md) | 日语零基础、英语CET-4与有记忆的语言训练 | 0.1.0 |
+| [paper-reading-skill](paper-reading-skill/SKILL.md) | 毕设论文筛选、精读、证据笔记、多篇比较与文献综述 | 0.1.0 |
 
 两种课程技能是可选方案，一次学习通常选一个。完整版是当前主要维护方向；轻量版保留独立用途，不自动把不同版本的规则混在一起。
 
@@ -268,7 +269,7 @@ git clone https://github.com/QCYM-qcym/personal-skills.git
 
 日常由本地编辑、Git 提交保存历史、GitHub 同步备份；其他电脑更新前先提交自己的改动，再执行 `git pull --ff-only`。出现冲突时按双方意图合并，不直接覆盖。
 
-四种技能独立分发，因此各自包含状态协议与模板。维护时以完整版的这两个文件为源，同步到轻量版、科学思维版与语言版；自动检查会验证分发副本一致，避免同一课程在切换技能后出现两套状态规则。
+原四种教学技能独立分发，因此各自包含状态协议与模板；论文阅读技能另用文献索引与阅读接续摘要，不维护课程掌握等级。维护时以完整版的这两个文件为源，同步到轻量版、科学思维版与语言版；自动检查会验证分发副本一致，避免同一课程在切换技能后出现两套状态规则。
 
 ## 内容与分发
 
@@ -276,3 +277,14 @@ git clone https://github.com/QCYM-qcym/personal-skills.git
 - 不上传教材 PDF、个人学习记录、设备配置或凭据。忽略规则只是辅助，提交前仍应检查文件清单。
 - 结构借鉴及原始来源见 [设计依据](personal-learning-skill/references/design-notes.md)。本项目并非上游作者的官方作品。
 - 当前未选择开源许可证。公开可见不等于授予任意复制、修改或再分发授权；如果计划开放复用，后续明确许可证并保留必要的第三方声明。
+
+
+## 毕设论文阅读与综述
+
+paper-reading-skill按背景、进展、研究设计、写作四种目的选阅读路线，支持单篇文献卡、主题比较与带可追溯引用的综述正文。记实际阅读范围，全文缺失不编结果；个人记录保存在毕设项目，独立运行不需要其他学习Skill。
+
+调用：“读取 E:/agent/skill/paper-reading-skill/SKILL.md。我的毕设题目是【题目】，论文在【路径/附件】，请比较这些研究并写【篇幅】的综述；引用按【学校要求/暂用文献ID】，进度保存到【毕设目录】。”
+
+[下载 paper-reading-skill-v0.1.0](https://github.com/QCYM-qcym/personal-skills/archive/refs/tags/paper-reading-skill-v0.1.0.zip)（整个仓库快照，使用其中paper-reading-skill目录）。
+
+初学者可说：“用paper-reading-skill带我精读：摘要按背景、挑战、做法、意义四格拆解；引言逐句解释、逐段总结，记录缩写与专业术语，帮我串起逻辑。”材料与方法按目标读，判断结果或借鉴实验时核验必要细节。
